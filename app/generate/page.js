@@ -1,4 +1,4 @@
-import GenerateClient from './GenerateClient';
+import Generate from "./GenerateClient"
 
 export const metadata = {
   title: "Generate Your Bittree - Linktree Clone",
@@ -6,5 +6,5 @@ export const metadata = {
 }
 
 export default function GeneratePage() {
-  return <GenerateClient />
+  return <Generate />
 }

@@ -122,7 +122,7 @@ const requestOptions = {
 };
 
   try {
-    const r = await fetch("http://localhost:3000/api/generate", requestOptions)
+    const r = await fetch("/api/generate", requestOptions)
     const result = await r.json()
 
     if (result.success) {
