@@ -1,4 +1,5 @@
 import Generate from "./GenerateClient"
+import { Suspense } from "react"
 
 export const metadata = {
   title: "Generate Your Bittree - Linktree Clone",
@@ -6,5 +7,9 @@ export const metadata = {
 }
 
 export default function GeneratePage() {
-  return <Generate />
+  return  (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Generate />
+    </Suspense>
+  )
 }
