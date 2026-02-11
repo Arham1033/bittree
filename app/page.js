@@ -149,17 +149,25 @@ const faqs = [
             Instagram, TikTok, Twitter, YouTube and other social media profiles.
           </p>
           <div className="flex lg:gap-4 gap-2 lg:justify-start justify-center lg:px-0 px-2">
+           
+           <div className='flex flex-col gap-2'>
+
+            <h1 className="font-semibold text-green-800 px-3">Enter your name in small letters</h1>
+
+            <div className="flex lg:gap-4 gap-2 lg:justify-start justify-center lg:px-0 px-2">
             <input
-              className="bg-white rounded-lg p-4 px-3 w-1/2"
+              className="bg-white rounded-lg py-3 px-3 w-1/2"
               type="text"
               value={text}
               onChange={(e)=>{settext(e.target.value)}}
               placeholder="link.tree"
-            />
+              />
        
-            <button onClick={createTree} className="rounded-full text-white bg-green-800 lg:p-4 p-1 px-6 font-semibold hover:cursor-pointer hover:bg-green-900 transition-all ease-in-out duration-200">
+            <button onClick={createTree} className="rounded-full text-white bg-green-800 lg:p-3 p-1 px-6 font-semibold hover:cursor-pointer hover:bg-green-900 transition-all ease-in-out duration-200">
               Claim your Bittree
             </button>
+              </div>
+              </div>
        
           </div>
         </div>
