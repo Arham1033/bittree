@@ -125,6 +125,7 @@ const requestOptions = {
     const r = await fetch("/api/generate", requestOptions)
     const result = await r.json()
 
+
     if (result.success) {
       toast.success(result.message)
 
